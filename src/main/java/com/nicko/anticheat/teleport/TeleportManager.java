@@ -1,7 +1,7 @@
 package com.nicko.anticheat.teleport;
 
-import lombok.val;
 import com.nicko.anticheat.location.PlayerLocation;
+import lombok.val;
 
 import java.util.ArrayList;
 import java.util.List;

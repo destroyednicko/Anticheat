@@ -1,8 +1,13 @@
 package com.nicko.anticheat.parser;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.check.checks.PacketCheck;
 import com.nicko.anticheat.check.checks.RotationCheck;
+import com.nicko.anticheat.check.impl.payload.Payload;
+import com.nicko.anticheat.data.PlayerData;
 import com.nicko.anticheat.location.PlayerLocation;
 import com.nicko.anticheat.update.impl.RotationUpdate;
+import com.nicko.anticheat.util.ReflectionUtil;
 import com.nicko.anticheat.util.location.LocationUtil;
 import io.netty.channel.ChannelDuplexHandler;
 import io.netty.channel.ChannelHandlerContext;
@@ -13,11 +18,6 @@ import net.minecraft.server.v1_8_R3.*;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.check.checks.PacketCheck;
-import com.nicko.anticheat.check.impl.payload.Payload;
-import com.nicko.anticheat.data.PlayerData;
-import com.nicko.anticheat.util.ReflectionUtil;
 
 @RequiredArgsConstructor
 public class PacketParser extends ChannelDuplexHandler {

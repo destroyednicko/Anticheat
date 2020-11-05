@@ -1,16 +1,16 @@
 package com.nicko.anticheat.listener;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.event.PlayerViolationEvent;
+import com.nicko.anticheat.parser.PacketParser;
 import com.nicko.anticheat.util.location.LocationUtil;
+import com.nicko.anticheat.util.nms.NmsUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.event.PlayerViolationEvent;
-import com.nicko.anticheat.parser.PacketParser;
-import com.nicko.anticheat.util.nms.NmsUtil;
 
 @RequiredArgsConstructor
 public class PlayerListener implements Listener {

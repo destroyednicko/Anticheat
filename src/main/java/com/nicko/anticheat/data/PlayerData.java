@@ -1,5 +1,6 @@
 package com.nicko.anticheat.data;
 
+import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.action.ActionManager;
 import com.nicko.anticheat.check.Check;
 import com.nicko.anticheat.check.impl.aimassist.AimAssistA;
@@ -22,14 +23,13 @@ import com.nicko.anticheat.check.impl.speed.SpeedA;
 import com.nicko.anticheat.check.impl.timer.TimerA;
 import com.nicko.anticheat.check.impl.velocity.VelocityA;
 import com.nicko.anticheat.check.impl.velocity.VelocityB;
+import com.nicko.anticheat.check.impl.velocity.VelocityC;
 import com.nicko.anticheat.location.PlayerLocation;
 import com.nicko.anticheat.parser.MovementParser;
 import com.nicko.anticheat.teleport.TeleportManager;
 import com.nicko.anticheat.velocity.VelocityManager;
 import lombok.Getter;
 import lombok.Setter;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.check.impl.velocity.VelocityC;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;

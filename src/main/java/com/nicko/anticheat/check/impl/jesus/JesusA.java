@@ -1,13 +1,13 @@
 package com.nicko.anticheat.check.impl.jesus;
 
-import lombok.val;
-import org.bukkit.Location;
-import org.bukkit.entity.Player;
 import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.PositionCheck;
 import com.nicko.anticheat.data.PlayerData;
 import com.nicko.anticheat.update.impl.PositionUpdate;
 import com.nicko.anticheat.util.location.MaterialUtil;
+import lombok.val;
+import org.bukkit.Location;
+import org.bukkit.entity.Player;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -22,7 +22,7 @@ public class JesusA extends PositionCheck {
     private double previousDeltaY;
     private long lastFlag;
 
-    private Deque<Long> flagSpeedList = new LinkedList<>();
+    private final Deque<Long> flagSpeedList = new LinkedList<>();
 
     @Override
     public void run(Player player, PositionUpdate update) {

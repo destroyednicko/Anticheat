@@ -1,12 +1,12 @@
 package com.nicko.anticheat.check.impl.autoclicker;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.check.checks.PacketCheck;
+import com.nicko.anticheat.data.PlayerData;
 import lombok.val;
 import net.minecraft.server.v1_8_R3.Packet;
 import net.minecraft.server.v1_8_R3.PacketPlayInArmAnimation;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.check.checks.PacketCheck;
-import com.nicko.anticheat.data.PlayerData;
 
 public class AutoClickerA extends PacketCheck {
     private long lastSwing, lastDelay;

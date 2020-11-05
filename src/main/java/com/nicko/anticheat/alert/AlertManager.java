@@ -1,11 +1,11 @@
 package com.nicko.anticheat.alert;
 
-import lombok.RequiredArgsConstructor;
-import lombok.val;
-import org.bukkit.entity.Player;
 import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.util.CC;
 import com.nicko.anticheat.util.message.mkremins.fanciful.FancyMessage;
+import lombok.RequiredArgsConstructor;
+import lombok.val;
+import org.bukkit.entity.Player;
 
 import java.util.Arrays;
 

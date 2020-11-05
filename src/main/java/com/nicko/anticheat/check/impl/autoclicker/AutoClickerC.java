@@ -1,13 +1,13 @@
 package com.nicko.anticheat.check.impl.autoclicker;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.check.checks.PacketCheck;
+import com.nicko.anticheat.data.PlayerData;
 import lombok.val;
 import net.minecraft.server.v1_8_R3.Packet;
 import net.minecraft.server.v1_8_R3.PacketPlayInArmAnimation;
 import net.minecraft.server.v1_8_R3.PacketPlayInBlockDig;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.check.checks.PacketCheck;
-import com.nicko.anticheat.data.PlayerData;
 
 public class AutoClickerC extends PacketCheck {
     private boolean dug;

@@ -10,8 +10,6 @@ import com.nicko.anticheat.punishment.PunishmentManager;
 import com.nicko.anticheat.util.BanHammer;
 import com.nicko.anticheat.util.date.BanDate;
 import lombok.Getter;
-import lombok.val;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;

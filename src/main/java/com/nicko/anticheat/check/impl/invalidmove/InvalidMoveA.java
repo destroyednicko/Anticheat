@@ -1,11 +1,11 @@
 package com.nicko.anticheat.check.impl.invalidmove;
 
+import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.PositionCheck;
+import com.nicko.anticheat.data.PlayerData;
 import com.nicko.anticheat.update.impl.PositionUpdate;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.data.PlayerData;
 
 public class InvalidMoveA extends PositionCheck {
 

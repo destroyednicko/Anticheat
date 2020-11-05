@@ -1,6 +1,8 @@
 package com.nicko.anticheat.check.impl.badpackets;
 
+import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.PacketCheck;
+import com.nicko.anticheat.data.PlayerData;
 import com.nicko.anticheat.util.math.MathUtil;
 import com.nicko.anticheat.util.nms.NmsUtil;
 import net.minecraft.server.v1_8_R3.Packet;
@@ -9,8 +11,6 @@ import net.minecraft.server.v1_8_R3.PacketPlayInTransaction;
 import net.minecraft.server.v1_8_R3.PacketPlayOutTransaction;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.data.PlayerData;
 
 public class BadPacketsG extends PacketCheck {
 
@@ -36,7 +36,7 @@ public class BadPacketsG extends PacketCheck {
 
             if (ping > (delay * 50L) * 2.75) {
                 onViolation(player, "flaggou " + name);
-                Bukkit.broadcastMessage(ping + " : " + String.valueOf((delay * 50L) * 2.75));
+                Bukkit.broadcastMessage(ping + " : " + (delay * 50L) * 2.75);
             }
         } else if (packet instanceof PacketPlayInFlying) {
             lastFlying = System.currentTimeMillis();

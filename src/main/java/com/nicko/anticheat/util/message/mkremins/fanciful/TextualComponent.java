@@ -71,8 +71,8 @@ public abstract class TextualComponent implements Cloneable {
 	}
 
 	static boolean isTranslatableText(TextualComponent component) {
-		return component instanceof ComplexTextTypeComponent && ((ComplexTextTypeComponent) component).getKey().equals("translate");
-	}
+        return component instanceof ComplexTextTypeComponent && component.getKey().equals("translate");
+    }
 
 	/**
 	 * Internal class used to represent all types of text components.
@@ -202,8 +202,8 @@ public abstract class TextualComponent implements Cloneable {
 				if (valEntry.getKey().equals("key")) {
 					key = (String) valEntry.getValue();
 				} else if (valEntry.getKey().startsWith("value.")) {
-					value.put(((String) valEntry.getKey()).substring(6) /* Strips out the value prefix */, valEntry.getValue().toString());
-				}
+                    value.put(valEntry.getKey().substring(6) /* Strips out the value prefix */, valEntry.getValue().toString());
+                }
 			}
 			return new ComplexTextTypeComponent(key, value);
 		}

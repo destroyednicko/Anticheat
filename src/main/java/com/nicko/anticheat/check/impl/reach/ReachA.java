@@ -1,5 +1,11 @@
 package com.nicko.anticheat.check.impl.reach;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.check.checks.PacketCheck;
+import com.nicko.anticheat.data.PlayerData;
+import com.nicko.anticheat.location.PlayerLocation;
+import com.nicko.anticheat.util.math.MathUtil;
+import com.nicko.anticheat.util.nms.NmsUtil;
 import lombok.val;
 import net.minecraft.server.v1_8_R3.Entity;
 import net.minecraft.server.v1_8_R3.EntityPlayer;
@@ -7,12 +13,6 @@ import net.minecraft.server.v1_8_R3.Packet;
 import net.minecraft.server.v1_8_R3.PacketPlayInUseEntity;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.check.checks.PacketCheck;
-import com.nicko.anticheat.data.PlayerData;
-import com.nicko.anticheat.location.PlayerLocation;
-import com.nicko.anticheat.util.math.MathUtil;
-import com.nicko.anticheat.util.nms.NmsUtil;
 
 public class ReachA extends PacketCheck {
 
@@ -21,7 +21,7 @@ public class ReachA extends PacketCheck {
         this.plugin = plugin;
     }
 
-    private AnticheatPlugin plugin;
+    private final AnticheatPlugin plugin;
 
     private int vl;
 

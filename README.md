@@ -1,8 +1,8 @@
 # Anticheat
 
-A simple anticheat for xxxxx;
+  A simple anticheat for xxxxx;
 
 TODO:
- - Make an API;
- - Optimize code;
- - Convert Java to Kotlin;
+   -  Make an API;
+   -  Optimize code;
+   -  Convert Java to Kotlin;

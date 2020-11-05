@@ -1,13 +1,13 @@
 package com.nicko.anticheat.check.impl.fly;
 
-import lombok.val;
-import org.bukkit.entity.Player;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.PositionCheck;
 import com.nicko.anticheat.data.PlayerData;
 import com.nicko.anticheat.update.impl.PositionUpdate;
+import lombok.val;
+import org.bukkit.entity.Player;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 public class FlyB extends PositionCheck {
 

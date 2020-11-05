@@ -1,12 +1,12 @@
 package com.nicko.anticheat.check.impl.badpackets;
 
+import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.PostCheck;
+import com.nicko.anticheat.data.PlayerData;
 import net.minecraft.server.v1_8_R3.Packet;
 import net.minecraft.server.v1_8_R3.PacketPlayInArmAnimation;
 import net.minecraft.server.v1_8_R3.PacketPlayInFlying;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.data.PlayerData;
 
 public class BadPacketsC extends PostCheck {
     public BadPacketsC(AnticheatPlugin plugin, PlayerData playerData) {

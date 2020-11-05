@@ -1,10 +1,10 @@
 package com.nicko.anticheat.check.impl.fly;
 
-import org.bukkit.entity.Player;
 import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.PositionCheck;
 import com.nicko.anticheat.data.PlayerData;
 import com.nicko.anticheat.update.impl.PositionUpdate;
+import org.bukkit.entity.Player;
 
 public class FlyA extends PositionCheck {
     private int airTicks;

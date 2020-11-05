@@ -1,12 +1,12 @@
 package com.nicko.anticheat.handler;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.check.checks.PositionCheck;
+import com.nicko.anticheat.update.impl.PositionUpdate;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.check.checks.PositionCheck;
-import com.nicko.anticheat.update.impl.PositionUpdate;
 
 @RequiredArgsConstructor
 public class MovementHandler {
@@ -21,7 +21,7 @@ public class MovementHandler {
         if (!player.getWorld().isChunkLoaded(to.getBlockX() >> 4, to.getBlockZ() >> 4)) {
             return;
         }
-        
+
         val playerData = this.plugin.getData(player);
 
         if (playerData == null) {

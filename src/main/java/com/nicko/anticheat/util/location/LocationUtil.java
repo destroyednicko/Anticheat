@@ -1,7 +1,5 @@
 package com.nicko.anticheat.util.location;
 
-import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.util.Vector;
 
 public class LocationUtil {

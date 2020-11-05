@@ -1,12 +1,12 @@
 package com.nicko.anticheat.check;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.data.PlayerData;
+import com.nicko.anticheat.event.PlayerViolationEvent;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.data.PlayerData;
-import com.nicko.anticheat.event.PlayerViolationEvent;
 
 import java.util.ArrayList;
 import java.util.List;

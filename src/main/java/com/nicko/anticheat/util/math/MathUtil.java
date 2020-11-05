@@ -1,11 +1,11 @@
 package com.nicko.anticheat.util.math;
 
+import com.nicko.anticheat.util.nms.NmsUtil;
 import lombok.val;
 import lombok.var;
 import net.minecraft.server.v1_8_R3.MathHelper;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.util.nms.NmsUtil;
 
 import java.util.Random;
 

@@ -1,8 +1,8 @@
 package com.nicko.anticheat.client;
 
-import org.bukkit.entity.Player;
 import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.data.PlayerData;
+import org.bukkit.entity.Player;
 
 import java.util.HashSet;
 import java.util.Set;

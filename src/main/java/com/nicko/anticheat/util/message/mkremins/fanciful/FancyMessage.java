@@ -5,23 +5,18 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonWriter;
+import com.nicko.anticheat.util.CC;
+import com.nicko.anticheat.util.message.net.amoebaman.util.ArrayWrapper;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.serialization.ConfigurationSerializable;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.util.CC;
-import com.nicko.anticheat.util.message.net.amoebaman.util.ArrayWrapper;
 
 import java.io.IOException;
 import java.io.StringWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.logging.Level;
 
 /**
@@ -43,7 +38,7 @@ public class FancyMessage implements JsonRepresentedObject, Cloneable, Iterable<
 	private List<MessagePart> messageParts;
 	private String jsonString;
 	private boolean dirty;
-	
+
 	@Override
 	public FancyMessage clone() throws CloneNotSupportedException {
 		FancyMessage instance = (FancyMessage) super.clone();
@@ -579,7 +574,7 @@ public class FancyMessage implements JsonRepresentedObject, Cloneable, Iterable<
 		return messageParts.iterator();
 	}
 
-	private static JsonParser _stringParser = new JsonParser();
+	private static final JsonParser _stringParser = new JsonParser();
 
 	/**
 	 * Deserializes a fancy message from its JSON representation. This JSON representation is of the format of

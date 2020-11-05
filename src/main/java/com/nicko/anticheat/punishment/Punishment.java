@@ -1,10 +1,10 @@
 package com.nicko.anticheat.punishment;
 
+import com.nicko.anticheat.util.BanHammer;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.bukkit.command.CommandSender;
-import com.nicko.anticheat.util.BanHammer;
 
 @Getter
 @RequiredArgsConstructor

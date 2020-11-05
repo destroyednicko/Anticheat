@@ -1,11 +1,11 @@
 package com.nicko.anticheat.check.impl.aimassist;
 
+import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.RotationCheck;
+import com.nicko.anticheat.data.PlayerData;
 import com.nicko.anticheat.update.impl.RotationUpdate;
 import lombok.val;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.data.PlayerData;
 
 public class AimAssistA extends RotationCheck {
     private float lastPitchChange, lastYaw;

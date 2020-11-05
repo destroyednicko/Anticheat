@@ -1,14 +1,14 @@
 package com.nicko.anticheat.check.checks;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.data.PlayerData;
 import lombok.val;
 import net.minecraft.server.v1_8_R3.Packet;
 import net.minecraft.server.v1_8_R3.PacketPlayInFlying;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.data.PlayerData;
 
 public class PostCheck extends PacketCheck {
-    private Class<? extends Packet> targetPacket;
+    private final Class<? extends Packet> targetPacket;
     private long lastPostAction;
     private double vl;
 

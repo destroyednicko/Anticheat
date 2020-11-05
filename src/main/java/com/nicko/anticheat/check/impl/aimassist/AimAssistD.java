@@ -1,12 +1,12 @@
 package com.nicko.anticheat.check.impl.aimassist;
 
+import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.RotationCheck;
 import com.nicko.anticheat.data.PlayerData;
 import com.nicko.anticheat.update.impl.RotationUpdate;
 import com.nicko.anticheat.util.math.MathUtil;
 import lombok.val;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
 
 public class AimAssistD extends RotationCheck {
     private float suspiciousYaw;

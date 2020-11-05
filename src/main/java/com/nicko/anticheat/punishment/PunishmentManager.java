@@ -1,9 +1,9 @@
 package com.nicko.anticheat.punishment;
 
-import lombok.RequiredArgsConstructor;
-import org.bukkit.Bukkit;
 import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.punishment.task.PunishmentRunnable;
+import lombok.RequiredArgsConstructor;
+import org.bukkit.Bukkit;
 
 @RequiredArgsConstructor
 public class PunishmentManager {

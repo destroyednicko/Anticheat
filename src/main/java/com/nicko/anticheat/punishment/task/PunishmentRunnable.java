@@ -1,9 +1,9 @@
 package com.nicko.anticheat.punishment.task;
 
-import com.nicko.anticheat.punishment.Punishment;
-import lombok.RequiredArgsConstructor;
 import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.punishment.Punishment;
 import com.nicko.anticheat.util.CC;
+import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class PunishmentRunnable implements Runnable {

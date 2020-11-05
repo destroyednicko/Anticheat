@@ -1,11 +1,11 @@
 package com.nicko.anticheat.check.impl.noslow;
 
-import net.minecraft.server.v1_8_R3.Packet;
-import net.minecraft.server.v1_8_R3.PacketPlayInBlockDig;
-import org.bukkit.entity.Player;
 import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.PacketCheck;
 import com.nicko.anticheat.data.PlayerData;
+import net.minecraft.server.v1_8_R3.Packet;
+import net.minecraft.server.v1_8_R3.PacketPlayInBlockDig;
+import org.bukkit.entity.Player;
 
 public class NoSlowA extends PacketCheck {
     public NoSlowA(AnticheatPlugin plugin, PlayerData playerData) {

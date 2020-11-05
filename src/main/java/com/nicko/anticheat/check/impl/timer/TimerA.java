@@ -1,14 +1,14 @@
 package com.nicko.anticheat.check.impl.timer;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.check.checks.PacketCheck;
+import com.nicko.anticheat.data.PlayerData;
+import com.nicko.anticheat.util.stats.MovingStats;
 import lombok.val;
 import net.minecraft.server.v1_8_R3.Packet;
 import net.minecraft.server.v1_8_R3.PacketPlayInFlying;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.check.checks.PacketCheck;
-import com.nicko.anticheat.data.PlayerData;
-import com.nicko.anticheat.util.stats.MovingStats;
 
 public class TimerA extends PacketCheck {
     private long lastFlyingTime;

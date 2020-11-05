@@ -1,11 +1,11 @@
 package com.nicko.anticheat.check.impl.velocity;
 
+import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.PositionCheck;
+import com.nicko.anticheat.data.PlayerData;
 import com.nicko.anticheat.update.impl.PositionUpdate;
 import lombok.val;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.data.PlayerData;
 
 public class VelocityB extends PositionCheck {
     private int threshold;

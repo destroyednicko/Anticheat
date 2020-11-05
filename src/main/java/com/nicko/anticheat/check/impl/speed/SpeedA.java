@@ -1,15 +1,15 @@
 package com.nicko.anticheat.check.impl.speed;
 
+import com.nicko.anticheat.AnticheatPlugin;
+import com.nicko.anticheat.check.checks.PositionCheck;
+import com.nicko.anticheat.data.PlayerData;
+import com.nicko.anticheat.update.impl.PositionUpdate;
 import lombok.val;
 import lombok.var;
 import net.minecraft.server.v1_8_R3.BlockPosition;
 import net.minecraft.server.v1_8_R3.MathHelper;
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.check.checks.PositionCheck;
-import com.nicko.anticheat.data.PlayerData;
-import com.nicko.anticheat.update.impl.PositionUpdate;
 
 public class SpeedA extends PositionCheck {
 

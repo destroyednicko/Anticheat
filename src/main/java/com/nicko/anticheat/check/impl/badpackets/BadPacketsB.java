@@ -1,11 +1,11 @@
 package com.nicko.anticheat.check.impl.badpackets;
 
+import com.nicko.anticheat.AnticheatPlugin;
 import com.nicko.anticheat.check.checks.PacketCheck;
+import com.nicko.anticheat.data.PlayerData;
 import net.minecraft.server.v1_8_R3.Packet;
 import net.minecraft.server.v1_8_R3.PacketPlayInFlying;
 import org.bukkit.entity.Player;
-import com.nicko.anticheat.AnticheatPlugin;
-import com.nicko.anticheat.data.PlayerData;
 
 public class BadPacketsB extends PacketCheck {
     public BadPacketsB(AnticheatPlugin plugin, PlayerData playerData) {
